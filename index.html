@@ -1,114 +1,412 @@
 <!DOCTYPE html>
-<html lang="en" manifest="index.appcache">
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Linfeng Chen's HomePager</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--main style-->
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<!--background slider style-->
+<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+<!--google font style-->
+<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+<!--font-family: 'Open Sans', sans-serif;-->
+<!-- font css style-->
+<link rel="stylesheet" href="css/font-awesome.css">
+<!--for slider style-->
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>陈林峰的主页</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-	</head>
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/fallback.css" />
+</noscript>
+<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/fallback.css" />
+		<![endif]-->
+</head><body>
+<!--wrapper start-->
+<div class="wrapper" id="wrapper">
+  <header>
+    <!--banner start-->
+    <div class="banner row" id="banner">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd" style="height:100%">
+        <!--background slide show start-->
+        <ul class="cb-slideshow">
+          <li><span>Image 01</span></li>
+          <li><span>Image 02</span></li>
+          <li><span>Image 03</span></li>
 
-	<body>
-		<div class="main_wrapper">
-			<!-- header start -->
-			<header>
-				<nav>
-					<div class="logo"><a href="#">Vincent’s Home Page</a></div>
-					<ul>
-						<li>
-							<a class="fa fa-link" href="#"></a>
-						</li>
-						<li>
-							<a href="#"></a>
-						</li>
-						<li>
-							<a href="#"></a>
-						</li>
-						<li>
-							<a href="#"></a>
-						</li>
-					</ul>
-				</nav>
-				<div id="banner">
-					<div class="inner">
-						<h1>陈林峰</h1>
-						</br>
-						<p>15年毕业于深圳信息学院<br>Android开发工程师</p>
-						<div class="more">
-							<p><a href="#a1">More</a></p>
-						</div>
-					</div>
-				</div>
-			</header>
-			<!-- container start -->
-			<div id="container">
-				<a id="a1"></a>
-				<section class="green_section">
-					<div class="wrapper">
-						<div>
-							<h2>我写的代码比她们还漂亮</h2>
-						</div>
-						<div id="mainContent">
-							<div class="img-box floorMain">
-								<img class="pic pic1" _lazysrc="images/img-box-7.jpg" alt="beauty">
-								<img class="pic pic2" _lazysrc="images/img-box-5.jpg" alt="beauty">
-								<img class="pic pic3" _lazysrc="images/img-box-8.jpg" alt="beauty">
-								<img class="pic pic4" _lazysrc="images/img-box-9.jpg" alt="beauty">
-								<img class="pic pic6" _lazysrc="images/img-box-10.jpg" alt="beauty">
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="gray_section">
-					<div class="article_preview">
-						<div class="img_section">
-							<img src="images/section-1.jpg">
-						</div>
-						<div class="text_section">
-							<h2>个人简介</h2>
-							<p>1992年出生 男</p>
-							<p>
-							 熟练掌握Android各类控件及自定义控件，能熟练利用Android布局实现各种复杂界面。熟悉Android文件存储管理、SQLite数据库存取与共享，熟悉动画多媒体应用。熟悉Android网络通信机制，多线程技术
-							</p>
-							<p>熟悉Java程序开发，熟练掌握Javascript、Servlet、JSP、SSH框架等技术</p>
-						</div>
-					</div>
-				</section>
-				<section class="purple_section">
-					<div class="heading_wrapper">
-						<h2>专业技能</h2>
-					</div>
-					<div class="card_group">
-						<div class="card card_1">
-							<h2>数据库</h2>
-							<p>熟练掌握SQL语言,熟练应用Oracle、SQL Server关系型数据库，了解MySql</p>
-						</div>
-						<div class="card card_2">
-							<h2>Linux</h2>
-							<p>熟悉Linux常用命令,了解网络基本技术，熟悉TCP/IP协议工作原理</p>
-						</div>
-						<div class="card card_3">
-							<h2>Javascript</h2>
-							<p>扎实的Javascript基础，熟练使用Angularjs，Jquery框架，了解框架ReactJS与Vuejs等框架</p>
-						</div>
-						<div class="card card_4">
-							<h2>Java</h2>
-							<p>熟悉基于Web应用的开发，J2EE、JSP/Servlet、JDBC、Spring MVC，熟悉MVC三层体系架构，对于面向对象编程有较深刻的理解</p>
-						</div>
-					</div>
-				</section>
-			</div>
-			<!-- footer start -->
-			<footer>
-				<div class="copy">
-					&copy Vincent’s Home Page - 2016
-				</div>
-			</footer>
-		</div>
-		<script type="text/javascript" src="js/CJL.0.1.min.js"></script>
-		<script type="text/javascript" src="js/LazyLoad.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+        </ul>
+        <!--background slide show end-->
+      </div>
+    </div>
+    <!--banner end-->
+    <div class="bannerText container">
+      <h1>I'm LinFeng Chen</h1>
+      <h2>An Android Application Development Engineer</h2>
+    </div>
+    <!--menu start-->
+    <div class="menu">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="navwrapper">
+            <div class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                  <a class="navbar-brand" href="#">Menu</a> </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="menuItem active"><a href="#wrapper">Home</a></li>
+                    <li class="menuItem"><a href="#aboutme">About</a></li>
+                    <li class="menuItem"><a href="#technical">Skills</a></li>
+                    <li class="menuItem"><a href="#exprience">Experience</a></li>
+                    <li class="menuItem"><a href="#education">Education</a></li>
+                    <li class="menuItem"><a href="#protfolio">Hobbies</a></li>
+                    <li class="menuItem"><a href="#contactDetails">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Navbar -->
+        </div>
+      </div>
+    </div>
+    <!--menu end-->
+  </header>
+  <!--about me start-->
+  <section class="aboutme" id="aboutme">
+    <div class="container">
+      <div class="heading">
+        <h2>About me</h2>
+        <p>A small introduction about my self</p>
+      </div>
+      <div class="row">
+        <div class=" col-xs-12 col-sm-12 col-md-7 col-lg-7">
+          <h3>LinFeng Chen</h3>
+          <h4 class="subHeading">Android Developer From ShenZhen</h4>
+          <p>My name is Linfeng Chen, you can call me Vincent.I am from ShenZhen.My hobbies are listening to music and watching film, i love indoor games such as play computer games , chess etc.</p>
+          <p>I deeply love programming, at the same time, I've got two years' experience in android development.In two years of android development work, I learned a lot about the knowledge of the android development, at present, I have been able to independently to complete the project development </p>
+          <a href="Android.pdf" class="bntDownload">Download Printable Resume</a> </div>
+        <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 proPic"> <img src="images/linfeng.jpg" alt="" class="img-circle topmar"> </div>
+      </div>
+    </div>
+  </section>
+  <!--about me end-->
+  <!--technical start-->
+  <section class="technical" id="technical">
+    <div class="container">
+      <div class="heading">
+        <h2>Technical Skills</h2>
+        <p>I can say i’m quite good at</p>
+      </div>
+      <div class="row">
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="90"> <span class="percent"></span> </span>
+            <h4>JAVA</h4>
+            <p>The most familiar with the development of language</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="80"> <span class="percent"></span> </span>
+            <h4>Android</h4>
+            <p>This is my favorite</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="80"> <span class="percent"></span> </span>
+            <h4>Photoshop</h4>
+            <p>Occasionally I also need to act as artists</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="75"> <span class="percent"></span> </span>
+            <h4>HTML5 / CSS3</h4>
+            <p>They needed to make beautiful page</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="60"> <span class="percent"></span> </span>
+            <h4>JavaScript</h4>
+            <p>Good interaction needs this</p>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea">
+          <div class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 skills"> <span class="chart skilBg" data-percent="65"> <span class="percent"></span> </span>
+            <h4>MS SQL</h4>
+            <p>Should not leave the database applications</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--technical end-->
+  <!--exprience start-->
+  <section class="exprience" id="exprience">
+    <div class="container">
+      <div class="heading">
+        <h2>Work Experience</h2>
+        <p>Worked in the company</p>
+      </div>
+      <div class="row workDetails">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+          <div class="workYear">August,2016<br>
+            At present</div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+          <div class="arrowpart"></div>
+          <div class="exCon">
+            <h4>Looking For...</h4>
+            <h5>Android development engineer</h5>
+            <p>Android or ？</p>
+          </div>
+        </div>
+      </div>
+      <div class="row workDetails">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+          <div class="workYear">August,2015<br>
+            May,2016</div>
+        </div>
+      <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+          <div class="arrowpart"></div>
+          <div class="exCon">
+            <h4>Shenzhen HuiKa century group co., LTD</h4>
+            <h5>Android development engineer</h5>
+            <p>Responsible for the company's video website xiaozibo android client development</p>
+          </div>
+        </div>
+      </div>
+      <div class="row workDetails">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+          <div class="workYear">July,2014<br>
+            July,2015</div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+          <div class="arrowpart"></div>
+          <div class="exCon">
+            <h4>Huawei technologies co., LTD</h4>
+            <h5>Helpdesk Intern</h5>
+            <p>Provide technical service for the wal-mart,Including the remote technical service and on-site technical services</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--exprience end-->
+  <!--education start-->
+  <section class="education" id="education">
+    <div class="container">
+      <div class="heading">
+        <h2>Education</h2>
+        <p>What I have done in my academic career</p>
+      </div>
+      <div class="row workDetails">
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+          <div class="workYear">July,2016</div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+          <div class="arrowpart"></div>
+          <div class="exCon">
+            <h4>Shenzhen University</h4>
+            <h5>Get Bachelor's degree</h5>
+            <p>Majoring Courses: C Program Language, Digital Electronics, Analog Electronics, MCU Interface Technology, PLC Control System. </p>
+          </div>
+        </div>
+      </div>
+  
+        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+          <div class="workYear">July, 2015</div>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+          <div class="arrowpart"></div>
+          <div class="exCon">
+            <h4>Shenzhen Institute of Information Technology</h4>
+            <h5>To join the communist party of China</h5>
+            <p>Majoring Courses: Java Program Language, The android game development, Html+CSS+javascript, Photoshop, 3D Max.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--education end-->
+  <div class="copyrights">Collect from <a href="#" >免费模板</a></div>
+  <!--protfolio start-->
+  <section class="protfolio" id="protfolio">
+    <div class="container">
+      <div class="heading">
+        <h2>Hobbies</h2>
+        <p>Personal interests and hobbies</p>
+      </div>
+      <div class="portfolioFilter">
+        <ul>
+          <li><a href="#" data-filter="*" class="current">All</a></li>
+          <li><a href="#" data-filter=".photos">Favorite</a></li>
+          <li><a href="#" data-filter=".branding">Sport</a></li>
+          <li><a href="#" data-filter=".illustration">Recommend</a></li>
+        </ul>
+      </div>
+      <ul class="portfolioContainer row">
+        <li class="photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/1.jpg" title="Gongfu Tea" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/item/%E5%B7%A5%E5%A4%AB%E8%8C%B6/3348648?fromtitle=%E5%8A%9F%E5%A4%AB%E8%8C%B6&fromid=406902&type=syn" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/1_1.jpg" alt=""  > </div>
+        </li>
+        <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/2.jpg" title="Codding" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/1241829/9322617.htm?fromtitle=%E5%AE%89%E5%8D%93&fromid=5389782&type=syn" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/2_2.jpg" alt="" > </div>
+        </li>
+        <li class="illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/3.jpg" title="Running" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/249407/13765956.htm" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/3_3.jpg" alt="" > </div>
+        </li>
+        <li class="branding illustration col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/4.jpg" title="Photography" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/7378/5402661.htm" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/4_4.jpg" alt="" > </div>
+        </li>
+        <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/5.jpg" title="Taylor Swift" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/1206484/15203161.htm?fromtitle=Taylor+Swift&fromid=10164559&type=syn" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/5_5.jpg" alt="" > </div>
+        </li>
+        <li class="branding photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/6.jpg" title="Readding" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/view/152033.htm" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/big/6.jpg" alt="" > </div>
+        </li>
+        <li class="illustration photos col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/7.jpg" title="Avril Lavigne" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/1212603/18953107.htm?fromtitle=Avril+Lavigne&fromid=161129&type=syn" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/big/7.jpg" alt="" > </div>
+        </li>
+        <li class="branding col-xs-6 col-sm-4 col-md-3 col-lg-3">
+          <div class="lightCon"> <span class="hoverBox"> <span class="smallIcon"> <a rel="lightbox-demo" href="images/portfolio/big/8.jpg" title="Swimming" class="zoom lb lb_warsaw1"><i class="fa fa-search fa-2x"></i></a> <a href="http://baike.baidu.com/subview/3318/9838195.htm" title="Project Link" target="_blank" class="linKed"><i class="fa fa-link fa-2x"></i></i></a> </span> </span> <img src="images/portfolio/samll/8_8.jpg" alt="" > </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--protfolio end-->
+  <!--contact start-->
+  <!--
+  	作者：linfenghp@hotmail.com
+  	时间：2016-06-12
+  	描述：就是一个空白块而已
+  -->
+<!--  <section class="contact" id="contact">
+    <div class="container topCon">
+      <div class="heading">
+        <h2>Get In Touch</h2>
+        <p>Please feel free if you would like to have a chat.</p>
+      </div>
+    </div>
+    <div class="row mapArea">
+      map
+    </div>
+  </section>-->
+  <section class="contactDetails" id="contactDetails">
+    <div class="container">
+      <!--contact info start-->
+      <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">
+        <h4>Contact details</h4>
+<p> <i class="fa fa-map-marker fa-lg"></i>GuangDong Shenzhen MeiLinGuan</p>
+        <p> <i class="fa fa-mobile fa-lg"></i>&nbsp;13570871315</p>
+        <p> <i class="fa fa-envelope-o "></i>linfenghp@iCloud.com</p>
+        <p> <i class="fa fa-link "></i>linfenghp.github.io</p>
+      </div>
+      <!--contact info end-->
+      <!--contact form start-->
+      <!--
+      	作者：linfenghp@hotmail.com
+      	时间：2016-06-12
+      	描述：填写表单而已，目前没用
+      -->
+     <!-- <div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 conForm">
+        <h4>Shoot a message!</h4>
+        <div id="message"></div>
+        <form method="post" action="php/contact.php" name="cform" id="cform">
+          <input name="name" id="name" type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name..." >
+          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-6 col-md-6 col-lg-6 noMarr" placeholder="Your email..." >
+          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
+          <input type="submit" id="submit" name="send" class="submitBnt" value="Send message">
+          <div id="simple-msg"></div>
+        </form>
+      </div>-->
+      <!--contact form end-->
+    </div>
+  </section>
+  <!--contact end-->
+  <!--footer start-->
+  <section class="footer" id="footer">
+    <div class="container">
+      <ul>
+        <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+        <li><a href="#"><i class="fa fa-rss fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </section>
+  <!--footer end-->
+</div>
+<!--wrapper end-->
+<!--modernizr js-->
+<script type="text/javascript" src="js/modernizr.custom.26633.js"></script>
+<!--jquary min js-->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+<!--for custom jquary-->
+<script src="js/custom.js"></script>
+<!--for placeholder jquary-->
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<!--for menu jquary-->
+<script type="text/javascript" src="js/stickUp.js"></script>
+<script type="text/javascript">
+jQuery(function($) {
+$(document).ready( function() {
+  //enabling stickUp on the '.navbar-wrapper' class
+  $('.navbar-wrapper').stickUp({
+				parts: {
+				  0: 'banner',
+				  1: 'aboutme',
+				  2: 'technical',
+				  3: 'exprience',
+				  4: 'education',
+				  5: 'protfolio',
+				  6: 'contact'
+				},
+				itemClass: 'menuItem',
+				itemHover: 'active',
+				topMargin: 'auto'
+			  });
+});
 
+$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+  $( ".navbar-collapse" ).addClass( "hideClass" );
+});
+
+
+$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+  $( ".navbar-collapse" ).addClass( "collapse" );
+});
+
+
+$( ".navbar.navbar-inverse.navbar-static-top a" ).click(function() {
+  $( ".navbar-collapse" ).removeClass( "in" );
+});
+
+$( ".navbar-toggle" ).click(function() {
+  $( ".navbar-collapse" ).removeClass( "hideClass" );
+});
+
+
+});
+</script>
+<!--for portfoli filter jquary-->
+<script src="js/jquery.isotope.js" type="text/javascript"></script>
+<!--for portfoli lightbox -->
+<link type="text/css" rel="stylesheet" id="theme" href="css/jquery-ui-1.8.16.custom.css">
+<link type="text/css" rel="stylesheet" href="css/lightbox.min.css">
+<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="js/jquery.ui.rlightbox.js"></script>
+<!--for skill chat jquary-->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.easypiechart.js"></script>
+<!--contact form js-->
+<script type="text/javascript" src="js/jquery.contact.js"></script>
+</body>
 </html>
